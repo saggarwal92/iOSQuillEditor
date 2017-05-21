@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		518A3D661ED1EB930053FBF6 /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 518A3D631ED1EB930053FBF6 /* NSString+FontAwesome.m */; };
+		518A3D671ED1EB930053FBF6 /* UIFont+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 518A3D651ED1EB930053FBF6 /* UIFont+FontAwesome.m */; };
+		51F605DD1ED170DF00B384D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F605DC1ED170DF00B384D0 /* main.m */; };
+		51F605E01ED170DF00B384D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F605DF1ED170DF00B384D0 /* AppDelegate.m */; };
+		51F605E31ED170DF00B384D0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F605E21ED170DF00B384D0 /* ViewController.m */; };
+		51F605E61ED170DF00B384D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51F605E41ED170DF00B384D0 /* Main.storyboard */; };
+		51F605E81ED170DF00B384D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51F605E71ED170DF00B384D0 /* Assets.xcassets */; };
+		51F605EB1ED170DF00B384D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51F605E91ED170DF00B384D0 /* LaunchScreen.storyboard */; };
+		51F605FB1ED171BA00B384D0 /* jquery.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 51F605F41ED171BA00B384D0 /* jquery.min.js */; };
+		51F605FC1ED171BA00B384D0 /* quill.base.css in Resources */ = {isa = PBXBuildFile; fileRef = 51F605F51ED171BA00B384D0 /* quill.base.css */; };
+		51F605FD1ED171BA00B384D0 /* quill.js in Resources */ = {isa = PBXBuildFile; fileRef = 51F605F61ED171BA00B384D0 /* quill.js */; };
+		51F605FE1ED171BA00B384D0 /* quill.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 51F605F71ED171BA00B384D0 /* quill.min.js */; };
+		51F605FF1ED171BA00B384D0 /* quill.snow.css in Resources */ = {isa = PBXBuildFile; fileRef = 51F605F81ED171BA00B384D0 /* quill.snow.css */; };
+		51F606001ED171BA00B384D0 /* ios_note_editor.js in Resources */ = {isa = PBXBuildFile; fileRef = 51F605F91ED171BA00B384D0 /* ios_note_editor.js */; };
+		51F606011ED171BA00B384D0 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 51F605FA1ED171BA00B384D0 /* style.css */; };
+		51F6060B1ED171D100B384D0 /* font-awesome.css in Resources */ = {isa = PBXBuildFile; fileRef = 51F606031ED171D100B384D0 /* font-awesome.css */; };
+		51F6060C1ED171D100B384D0 /* font-awesome.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 51F606041ED171D100B384D0 /* font-awesome.min.css */; };
+		51F6060D1ED171D100B384D0 /* fontawesome-webfont.eot in Resources */ = {isa = PBXBuildFile; fileRef = 51F606051ED171D100B384D0 /* fontawesome-webfont.eot */; };
+		51F6060E1ED171D100B384D0 /* fontawesome-webfont.svg in Resources */ = {isa = PBXBuildFile; fileRef = 51F606061ED171D100B384D0 /* fontawesome-webfont.svg */; };
+		51F6060F1ED171D100B384D0 /* fontawesome-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 51F606071ED171D100B384D0 /* fontawesome-webfont.ttf */; };
+		51F606101ED171D100B384D0 /* fontawesome-webfont.woff in Resources */ = {isa = PBXBuildFile; fileRef = 51F606081ED171D100B384D0 /* fontawesome-webfont.woff */; };
+		51F606111ED171D100B384D0 /* fontawesome-webfont.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = 51F606091ED171D100B384D0 /* fontawesome-webfont.woff2 */; };
+		51F606121ED171D100B384D0 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 51F6060A1ED171D100B384D0 /* FontAwesome.otf */; };
+		51F606141ED171E000B384D0 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 51F606131ED171E000B384D0 /* index.html */; };
+		51F606191ED1727800B384D0 /* QuillNoteEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F606161ED1727800B384D0 /* QuillNoteEditorViewController.m */; };
+		51F6061A1ED1727800B384D0 /* QuillToolbarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F606171ED1727800B384D0 /* QuillToolbarButton.m */; };
+		51F6061D1ED1748200B384D0 /* QuillToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F6061C1ED1748200B384D0 /* QuillToolbar.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		518A3D621ED1EB930053FBF6 /* NSString+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+FontAwesome.h"; path = "Files/Resource_Files/FontAwesome/NSString+FontAwesome.h"; sourceTree = "<group>"; };
+		518A3D631ED1EB930053FBF6 /* NSString+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+FontAwesome.m"; path = "Files/Resource_Files/FontAwesome/NSString+FontAwesome.m"; sourceTree = "<group>"; };
+		518A3D641ED1EB930053FBF6 /* UIFont+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIFont+FontAwesome.h"; path = "Files/Resource_Files/FontAwesome/UIFont+FontAwesome.h"; sourceTree = "<group>"; };
+		518A3D651ED1EB930053FBF6 /* UIFont+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIFont+FontAwesome.m"; path = "Files/Resource_Files/FontAwesome/UIFont+FontAwesome.m"; sourceTree = "<group>"; };
+		51F605D81ED170DF00B384D0 /* iOSQuillEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSQuillEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		51F605DC1ED170DF00B384D0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		51F605DE1ED170DF00B384D0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		51F605DF1ED170DF00B384D0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		51F605E11ED170DF00B384D0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		51F605E21ED170DF00B384D0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		51F605E51ED170DF00B384D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		51F605E71ED170DF00B384D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		51F605EA1ED170DF00B384D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		51F605EC1ED170DF00B384D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51F605F41ED171BA00B384D0 /* jquery.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = jquery.min.js; path = Files/Resource_Files/jquery.min.js; sourceTree = "<group>"; };
+		51F605F51ED171BA00B384D0 /* quill.base.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = quill.base.css; path = Files/Resource_Files/quill.base.css; sourceTree = "<group>"; };
+		51F605F61ED171BA00B384D0 /* quill.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = quill.js; path = Files/Resource_Files/quill.js; sourceTree = "<group>"; };
+		51F605F71ED171BA00B384D0 /* quill.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = quill.min.js; path = Files/Resource_Files/quill.min.js; sourceTree = "<group>"; };
+		51F605F81ED171BA00B384D0 /* quill.snow.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = quill.snow.css; path = Files/Resource_Files/quill.snow.css; sourceTree = "<group>"; };
+		51F605F91ED171BA00B384D0 /* ios_note_editor.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = ios_note_editor.js; path = Files/Resource_Files/ios_note_editor.js; sourceTree = "<group>"; };
+		51F605FA1ED171BA00B384D0 /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = style.css; path = Files/Resource_Files/style.css; sourceTree = "<group>"; };
+		51F606031ED171D100B384D0 /* font-awesome.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = "font-awesome.css"; path = "Files/Resource_Files/FontAwesome/font-awesome.css"; sourceTree = "<group>"; };
+		51F606041ED171D100B384D0 /* font-awesome.min.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = "font-awesome.min.css"; path = "Files/Resource_Files/FontAwesome/font-awesome.min.css"; sourceTree = "<group>"; };
+		51F606051ED171D100B384D0 /* fontawesome-webfont.eot */ = {isa = PBXFileReference; lastKnownFileType = file; name = "fontawesome-webfont.eot"; path = "Files/Resource_Files/FontAwesome/fontawesome-webfont.eot"; sourceTree = "<group>"; };
+		51F606061ED171D100B384D0 /* fontawesome-webfont.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "fontawesome-webfont.svg"; path = "Files/Resource_Files/FontAwesome/fontawesome-webfont.svg"; sourceTree = "<group>"; };
+		51F606071ED171D100B384D0 /* fontawesome-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "fontawesome-webfont.ttf"; path = "Files/Resource_Files/FontAwesome/fontawesome-webfont.ttf"; sourceTree = "<group>"; };
+		51F606081ED171D100B384D0 /* fontawesome-webfont.woff */ = {isa = PBXFileReference; lastKnownFileType = file; name = "fontawesome-webfont.woff"; path = "Files/Resource_Files/FontAwesome/fontawesome-webfont.woff"; sourceTree = "<group>"; };
+		51F606091ED171D100B384D0 /* fontawesome-webfont.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "fontawesome-webfont.woff2"; path = "Files/Resource_Files/FontAwesome/fontawesome-webfont.woff2"; sourceTree = "<group>"; };
+		51F6060A1ED171D100B384D0 /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome.otf; path = Files/Resource_Files/FontAwesome/FontAwesome.otf; sourceTree = "<group>"; };
+		51F606131ED171E000B384D0 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = index.html; path = Files/Resource_Files/index.html; sourceTree = "<group>"; };
+		51F606151ED1727800B384D0 /* QuillNoteEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuillNoteEditorViewController.h; path = Files/QuillNoteEditorViewController.h; sourceTree = "<group>"; };
+		51F606161ED1727800B384D0 /* QuillNoteEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuillNoteEditorViewController.m; path = Files/QuillNoteEditorViewController.m; sourceTree = "<group>"; };
+		51F606171ED1727800B384D0 /* QuillToolbarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuillToolbarButton.m; path = Files/QuillToolbarButton.m; sourceTree = "<group>"; };
+		51F606181ED1727800B384D0 /* QuillToolbarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuillToolbarButton.h; path = Files/QuillToolbarButton.h; sourceTree = "<group>"; };
+		51F6061B1ED1748200B384D0 /* QuillToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuillToolbar.h; path = Files/QuillToolbar.h; sourceTree = "<group>"; };
+		51F6061C1ED1748200B384D0 /* QuillToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuillToolbar.m; path = Files/QuillToolbar.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		51F605D51ED170DF00B384D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		51F605CF1ED170DF00B384D0 = {
+			isa = PBXGroup;
+			children = (
+				51F605DA1ED170DF00B384D0 /* iOSQuillEditor */,
+				51F605D91ED170DF00B384D0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		51F605D91ED170DF00B384D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				51F605D81ED170DF00B384D0 /* iOSQuillEditor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		51F605DA1ED170DF00B384D0 /* iOSQuillEditor */ = {
+			isa = PBXGroup;
+			children = (
+				51F605F21ED170EE00B384D0 /* Files */,
+				51F605DE1ED170DF00B384D0 /* AppDelegate.h */,
+				51F605DF1ED170DF00B384D0 /* AppDelegate.m */,
+				51F605E11ED170DF00B384D0 /* ViewController.h */,
+				51F605E21ED170DF00B384D0 /* ViewController.m */,
+				51F605E41ED170DF00B384D0 /* Main.storyboard */,
+				51F605E71ED170DF00B384D0 /* Assets.xcassets */,
+				51F605E91ED170DF00B384D0 /* LaunchScreen.storyboard */,
+				51F605EC1ED170DF00B384D0 /* Info.plist */,
+				51F605DB1ED170DF00B384D0 /* Supporting Files */,
+			);
+			path = iOSQuillEditor;
+			sourceTree = "<group>";
+		};
+		51F605DB1ED170DF00B384D0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				51F605DC1ED170DF00B384D0 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		51F605F21ED170EE00B384D0 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				51F606151ED1727800B384D0 /* QuillNoteEditorViewController.h */,
+				51F606161ED1727800B384D0 /* QuillNoteEditorViewController.m */,
+				51F606181ED1727800B384D0 /* QuillToolbarButton.h */,
+				51F606171ED1727800B384D0 /* QuillToolbarButton.m */,
+				51F6061B1ED1748200B384D0 /* QuillToolbar.h */,
+				51F6061C1ED1748200B384D0 /* QuillToolbar.m */,
+				51F605F31ED170F600B384D0 /* Resource_Files */,
+			);
+			name = Files;
+			sourceTree = "<group>";
+		};
+		51F605F31ED170F600B384D0 /* Resource_Files */ = {
+			isa = PBXGroup;
+			children = (
+				51F605F91ED171BA00B384D0 /* ios_note_editor.js */,
+				51F606131ED171E000B384D0 /* index.html */,
+				51F606021ED171BE00B384D0 /* FontAwesome */,
+				51F605F41ED171BA00B384D0 /* jquery.min.js */,
+				51F605F51ED171BA00B384D0 /* quill.base.css */,
+				51F605F61ED171BA00B384D0 /* quill.js */,
+				51F605F71ED171BA00B384D0 /* quill.min.js */,
+				51F605F81ED171BA00B384D0 /* quill.snow.css */,
+				51F605FA1ED171BA00B384D0 /* style.css */,
+			);
+			name = Resource_Files;
+			sourceTree = "<group>";
+		};
+		51F606021ED171BE00B384D0 /* FontAwesome */ = {
+			isa = PBXGroup;
+			children = (
+				518A3D621ED1EB930053FBF6 /* NSString+FontAwesome.h */,
+				518A3D631ED1EB930053FBF6 /* NSString+FontAwesome.m */,
+				518A3D641ED1EB930053FBF6 /* UIFont+FontAwesome.h */,
+				518A3D651ED1EB930053FBF6 /* UIFont+FontAwesome.m */,
+				51F606031ED171D100B384D0 /* font-awesome.css */,
+				51F606041ED171D100B384D0 /* font-awesome.min.css */,
+				51F606051ED171D100B384D0 /* fontawesome-webfont.eot */,
+				51F606061ED171D100B384D0 /* fontawesome-webfont.svg */,
+				51F606071ED171D100B384D0 /* fontawesome-webfont.ttf */,
+				51F606081ED171D100B384D0 /* fontawesome-webfont.woff */,
+				51F606091ED171D100B384D0 /* fontawesome-webfont.woff2 */,
+				51F6060A1ED171D100B384D0 /* FontAwesome.otf */,
+			);
+			name = FontAwesome;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		51F605D71ED170DF00B384D0 /* iOSQuillEditor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51F605EF1ED170DF00B384D0 /* Build configuration list for PBXNativeTarget "iOSQuillEditor" */;
+			buildPhases = (
+				51F605D41ED170DF00B384D0 /* Sources */,
+				51F605D51ED170DF00B384D0 /* Frameworks */,
+				51F605D61ED170DF00B384D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSQuillEditor;
+			productName = iOSQuillEditor;
+			productReference = 51F605D81ED170DF00B384D0 /* iOSQuillEditor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		51F605D01ED170DF00B384D0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Sort;
+				TargetAttributes = {
+					51F605D71ED170DF00B384D0 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = A9G4A48XU6;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 51F605D31ED170DF00B384D0 /* Build configuration list for PBXProject "iOSQuillEditor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 51F605CF1ED170DF00B384D0;
+			productRefGroup = 51F605D91ED170DF00B384D0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				51F605D71ED170DF00B384D0 /* iOSQuillEditor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		51F605D61ED170DF00B384D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51F605FD1ED171BA00B384D0 /* quill.js in Resources */,
+				51F605FF1ED171BA00B384D0 /* quill.snow.css in Resources */,
+				51F606101ED171D100B384D0 /* fontawesome-webfont.woff in Resources */,
+				51F605FC1ED171BA00B384D0 /* quill.base.css in Resources */,
+				51F606001ED171BA00B384D0 /* ios_note_editor.js in Resources */,
+				51F605EB1ED170DF00B384D0 /* LaunchScreen.storyboard in Resources */,
+				51F605FE1ED171BA00B384D0 /* quill.min.js in Resources */,
+				51F6060C1ED171D100B384D0 /* font-awesome.min.css in Resources */,
+				51F605E81ED170DF00B384D0 /* Assets.xcassets in Resources */,
+				51F606011ED171BA00B384D0 /* style.css in Resources */,
+				51F6060E1ED171D100B384D0 /* fontawesome-webfont.svg in Resources */,
+				51F606111ED171D100B384D0 /* fontawesome-webfont.woff2 in Resources */,
+				51F605FB1ED171BA00B384D0 /* jquery.min.js in Resources */,
+				51F605E61ED170DF00B384D0 /* Main.storyboard in Resources */,
+				51F606121ED171D100B384D0 /* FontAwesome.otf in Resources */,
+				51F6060F1ED171D100B384D0 /* fontawesome-webfont.ttf in Resources */,
+				51F6060B1ED171D100B384D0 /* font-awesome.css in Resources */,
+				51F606141ED171E000B384D0 /* index.html in Resources */,
+				51F6060D1ED171D100B384D0 /* fontawesome-webfont.eot in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		51F605D41ED170DF00B384D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				518A3D661ED1EB930053FBF6 /* NSString+FontAwesome.m in Sources */,
+				51F6061A1ED1727800B384D0 /* QuillToolbarButton.m in Sources */,
+				51F6061D1ED1748200B384D0 /* QuillToolbar.m in Sources */,
+				51F605E31ED170DF00B384D0 /* ViewController.m in Sources */,
+				51F606191ED1727800B384D0 /* QuillNoteEditorViewController.m in Sources */,
+				51F605E01ED170DF00B384D0 /* AppDelegate.m in Sources */,
+				51F605DD1ED170DF00B384D0 /* main.m in Sources */,
+				518A3D671ED1EB930053FBF6 /* UIFont+FontAwesome.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		51F605E41ED170DF00B384D0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				51F605E51ED170DF00B384D0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		51F605E91ED170DF00B384D0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				51F605EA1ED170DF00B384D0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		51F605ED1ED170DF00B384D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		51F605EE1ED170DF00B384D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		51F605F01ED170DF00B384D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = A9G4A48XU6;
+				INFOPLIST_FILE = iOSQuillEditor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sort.iOSQuillEditor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		51F605F11ED170DF00B384D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = A9G4A48XU6;
+				INFOPLIST_FILE = iOSQuillEditor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sort.iOSQuillEditor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		51F605D31ED170DF00B384D0 /* Build configuration list for PBXProject "iOSQuillEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51F605ED1ED170DF00B384D0 /* Debug */,
+				51F605EE1ED170DF00B384D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		51F605EF1ED170DF00B384D0 /* Build configuration list for PBXNativeTarget "iOSQuillEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51F605F01ED170DF00B384D0 /* Debug */,
+				51F605F11ED170DF00B384D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 51F605D01ED170DF00B384D0 /* Project object */;
+}

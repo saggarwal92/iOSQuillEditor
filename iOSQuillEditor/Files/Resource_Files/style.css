@@ -1,0 +1,18 @@
+body {
+  font-family: 'Helvetica', 'Arial', san-serif;
+  font-size: 17px;
+  padding: 5px;
+}
+#content-container {
+  margin: auto;
+  width: 100%;
+}
+#editor-container {
+  height: 100%;
+  min-height:600px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+#ql-editor-1{
+    height: 100%;
+    min-height:600px;
+}
