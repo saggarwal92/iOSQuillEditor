@@ -33,6 +33,8 @@ static NSString *kQuillNoteLineFormatList = @"list";
 @property (nonatomic, assign) BOOL textFormatting;
 @property (nonatomic, assign) BOOL lineFormatting;
 
+@property (nonatomic, assign) BOOL active;
+
 -(id)initWithFrame:(CGRect)frame andFormat:(NSString *)format;
 
 @end

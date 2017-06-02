@@ -15,6 +15,6 @@
 @property (nonatomic,readonly) NSArray<QuillToolbarButton *> *toolbarButtons;
 @property (nonatomic, weak) QuillNoteEditorViewController *editorViewController;
 
--(void)onSelectedTextinRange:(NSRange)range havingAttributes:(NSArray *)attributes;
+-(void)onSelectedTextInRange:(NSRange)range havingAttributes:(NSArray *)attributes;
 
 @end

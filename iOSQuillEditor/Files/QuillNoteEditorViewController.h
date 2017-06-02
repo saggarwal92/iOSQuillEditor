@@ -10,7 +10,7 @@
 
 
 @protocol QuillNoteEditorDelegate <NSObject>
--(void)onSelectedTextinRange:(NSRange)range havingAttributes:(NSArray *)attributes;
+-(void)onSelectedTextInRange:(NSRange)range havingAttributes:(NSArray *)attributes;
 -(void)onWebViewLoaded;
 @end
 

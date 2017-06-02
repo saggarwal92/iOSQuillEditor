@@ -23,23 +23,31 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 
+    self.view.backgroundColor = [UIColor whiteColor];
+    
     self.containerView = [[UIView alloc] initWithFrame:CGRectMake(0, 60, self.view.frame.size.width, self.view.frame.size.height - 60)];
     [self.view addSubview:self.containerView];
     
+    
+    /* Adding Quill Note Editor */
     _noteEditorController = [[QuillNoteEditorViewController alloc] initWithNibName:nil bundle:nil];
     [self addChildViewController:_noteEditorController];
     [self.containerView addSubview:_noteEditorController.view];
     _noteEditorController.view.frame = self.containerView.bounds;
     [_noteEditorController didMoveToParentViewController:self];
     
-    _quillToolbar = [[QuillToolbar alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 60)];
-    _quillToolbar.editorViewController = _noteEditorController;
-    [self.view addSubview:_quillToolbar];
+    //Set Delegate To Self:
+    _noteEditorController.delegate = self;
     
+    /*Attaching Quill Toolbar */
+    _quillToolbar = [[QuillToolbar alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 60)];
+    [self.view addSubview:_quillToolbar];
+    //Set EditorViewController to QuillToolbar;
+    _quillToolbar.editorViewController = _noteEditorController;
 }
 
--(void)onSelectedTextinRange:(NSRange)range havingAttributes:(NSArray *)attributes{
-    [_quillToolbar onSelectedTextinRange:range havingAttributes:attributes];
+-(void)onSelectedTextInRange:(NSRange)range havingAttributes:(NSArray *)attributes{
+    [_quillToolbar onSelectedTextInRange:range havingAttributes:attributes];
 }
 
 -(void)onWebViewLoaded{

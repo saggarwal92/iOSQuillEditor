@@ -213,11 +213,11 @@ static Class hackishFixClass = Nil;
     if([attributesString length] > 0){
         NSArray *attributes = [attributesString componentsSeparatedByString:@","];
         if(self.delegate){
-            [self.delegate onSelectedTextinRange:NSMakeRange(start,(end - start + 1)) havingAttributes:attributes];
+            [self.delegate onSelectedTextInRange:NSMakeRange(start,(end - start + 1)) havingAttributes:attributes];
         }
     }else{
         if(self.delegate){
-            [self.delegate onSelectedTextinRange:NSMakeRange(start, (end - start + 1)) havingAttributes:@[]];
+            [self.delegate onSelectedTextInRange:NSMakeRange(start, (end - start + 1)) havingAttributes:@[]];
         }
     }
     

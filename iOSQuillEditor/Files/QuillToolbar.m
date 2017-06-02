@@ -15,7 +15,14 @@
 @end
 
 
+
+
+
+@interface QuillToolbar()
+@end
+
 @implementation QuillToolbar
+
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
@@ -26,16 +33,11 @@
     return self;
 }
 
+
 -(void)initialize{
-    
     _toolbarButtons = [self toolbarButtonsListInFrame:self.frame];
-    
-    self.backgroundColor = [UIColor blueColor];
-    
+    self.backgroundColor = [UIColor colorWithRed:0.86 green:0.87 blue:0.87 alpha:1.0];
 }
-
-
-
 
 
 -(NSArray *)toolbarButtonsListInFrame:(CGRect)frame{
@@ -79,17 +81,18 @@
                                   @"icon":@"fa-list-ol",
                                   @"format":kQuillNoteLineFormatList,
                                   },
-                              
-                              
                               ];
     
     
     //Default ToolbarButtonFrame
     CGRect toolbarButtonFrame = frame;
-    toolbarButtonFrame.origin.x = toolbarButtonFrame.origin.y = 0;
+    toolbarButtonFrame.origin.x = 0;
+    toolbarButtonFrame.origin.y = 10;
+    toolbarButtonFrame.size.height -= toolbarButtonFrame.origin.y;
     toolbarButtonFrame.size.width /= toolbarItems.count;
     
     
+    /*Creating Toolbar Buttons*/
     NSMutableArray *toolbarButtons = [NSMutableArray array];
     for(NSDictionary *toolbarItem in toolbarItems){
         QuillToolbarButton *toolbarButton = [[QuillToolbarButton alloc] initWithFrame:toolbarButtonFrame andFormat:toolbarItem[@"format"]];
@@ -99,9 +102,7 @@
         [self addSubview:toolbarButton];
         
         [toolbarButtons addObject:toolbarButton];
-        
         toolbarButtonFrame.origin.x += toolbarButtonFrame.size.width;
-        
     }
     
     return toolbarButtons;
@@ -110,12 +111,12 @@
 
 
 -(void)onToolbarButtonClicked:(QuillToolbarButton *)button{
-    NSLog(@"I am clicked");
     if(_editorViewController){
         if(button.textAlignment){
             [self.editorViewController setTextAlignment:button.format];
         }else if(button.textFormatting){
-            [self.editorViewController setTextFormat:button.format andApply:YES];
+            button.active = !button.active;
+            [self.editorViewController setTextFormat:button.format andApply:button.active];
         }else if(button.lineAlignment){
             [self.editorViewController setLineAlignment:button.format];
         }else if(button.lineFormatting){
@@ -124,7 +125,18 @@
     }
 }
 
--(void)onSelectedTextinRange:(NSRange)range havingAttributes:(NSArray *)attributes{
+
+-(void)onSelectedTextInRange:(NSRange)range havingAttributes:(NSArray *)attributes{
+    for(QuillToolbarButton *button in self.toolbarButtons){
+        if([attributes containsObject:button.format]){
+            button.active = YES;
+        }else{
+            button.active = NO;
+        }
+    }
+    
 }
+
+
 
 @end
