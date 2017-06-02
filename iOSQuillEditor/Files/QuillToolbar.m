@@ -66,11 +66,6 @@
                               /* Line Formats */
                               @{
                                   @"key":@"lineFormatting",
-                                  @"icon":@"fa-list",
-                                  @"format":kQuillNoteLineFormatNone,
-                                  },
-                              @{
-                                  @"key":@"lineFormatting",
                                   @"icon":@"fa-list-ul",
                                   @"format":kQuillNoteLineFormatBullet,
                                   },
@@ -111,6 +106,7 @@
 -(void)onToolbarButtonClicked:(QuillToolbarButton *)button{
     if(_editorViewController){
         button.active = !button.active;
+        
         if(button.textAlignment){
             [self.editorViewController setTextAlignment:button.format];
         }else if(button.textFormatting){
@@ -118,8 +114,18 @@
         }else if(button.lineAlignment){
             [self.editorViewController setLineAlignment:button.format];
         }else if(button.lineFormatting){
-            [self.editorViewController setLineFormat:button.format];
+            if(button.active){
+                //Set Other Buttons InActive
+                for(QuillToolbarButton *btn in self.toolbarButtons){
+                    if(btn.lineFormatting && btn != button){
+                        btn.active = NO;
+                    }
+                }
+            }
+            
+            [self.editorViewController setLineFormat:button.format andApply:button.active];
         }
+        
     }
 }
 

@@ -70,47 +70,64 @@ function getCaretYPosition(){
 function setTextAlignment(alignment){
     range = editor.getSelection()
     if(range){
-        if(range.start == range.end){
-            editor.prepareFormat('align',alignment);
+        if(range.length == 0){
+            editor.format('align',alignment);
         }else{
-            editor.formatText(range.start,range.end,'align',alignment);
+            editor.formatText(range.index,range.length,'align',alignment);
         }
     }
 }
 
-function setLineFormat(format,value){
+function setLineFormat(value){
     range = editor.getSelection();
     if(range){
-        editor.formatLine(range.start,range.end,format,value);
+        editor.formatLine(range.index,range.length,"list",value);
     }
 }
 
 function setTextFormat(format,value){
-    range = editor.getSelection();
-    if(range){
-        if(range.start == range.end){
-            editor.prepareFormat(format,value);
-        }else{
-            editor.formatText(range.start ,range.end ,format ,value);
-        }
-    }
+    editor.format(format,value);
 }
 
 function onTextSelectedInRange(range,attributes){
     if(attributes){
-        callback = "edit://selection/"+range.start+"/"+range.end+"/"+attributes.join(',');
+        callback = "edit://selection/"+range.index+"/"+range.length+"/"+attributes.join(',');
         window.location = callback;
     }else{
-        callback = "edit://selection/"+range.start+"/"+range.end+"/";
+        callback = "edit://selection/"+range.index+"/"+range.length+"/";
         window.location = callback;
     }
 }
+
 
 /*Event Listener*/
 editor.on('selection-change', function(range) {
          console.log('selection-change', range);
           if(range){
-                contents = editor.getContents(range.start,range.end);
+          
+                allFormats = editor.getFormat();
+          
+                attributes = [];
+                for(iFormat in allFormats){
+                    if(iFormat == 'list'){
+                        attributes.push(allFormats[iFormat]);
+                    }else if(iFormat == 'align'){
+                        attributes.push(allFormats[iFormat]);
+                    }else{
+                        attributes.push(iFormat);
+                    }
+                }
+          
+                if(attributes.length > 0){
+                    onTextSelectedInRange(range,attributes);
+                }else{
+                    onTextSelectedInRange(range,null);
+                }
+          
+          
+                return;
+          
+          
                 ops = contents.ops;
           
                 attributesMap = {}

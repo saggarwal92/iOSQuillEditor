@@ -181,12 +181,12 @@ static Class hackishFixClass = Nil;
     [_webView stringByEvaluatingJavaScriptFromString:textAlignment];
 }
 
--(void)setLineFormat:(NSString *)format{
+-(void)setLineFormat:(NSString *)format andApply:(BOOL)apply{
     NSString *lineFormat;
-    if([format isEqualToString:@"none"]){
-        lineFormat = [NSString stringWithFormat:@"setLineFormat('bullet',false);"];
+    if(apply){
+        lineFormat = [NSString stringWithFormat:@"setLineFormat('%@');",format];
     }else{
-        lineFormat = [NSString stringWithFormat:@"setLineFormat('%@',true);",format];
+        lineFormat = @"setLineFormat('');";
     }
     [_webView stringByEvaluatingJavaScriptFromString:lineFormat];
 }

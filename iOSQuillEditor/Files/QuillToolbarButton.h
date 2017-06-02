@@ -20,9 +20,8 @@ static NSString *kQuillNoteTextFormatUnderline = @"underline";
 static NSString *kQuillNoteTextFormatStrike = @"strike";
 
 /* Line Formats */
-static NSString *kQuillNoteLineFormatNone = @"none";
 static NSString *kQuillNoteLineFormatBullet = @"bullet";
-static NSString *kQuillNoteLineFormatList = @"list";
+static NSString *kQuillNoteLineFormatList = @"ordered";
 
 
 @interface QuillToolbarButton : UIButton
