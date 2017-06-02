@@ -75,6 +75,8 @@ static Class hackishFixClass = Nil;
 
 
 
+
+
 @interface QuillNoteEditorViewController ()<UIWebViewDelegate,UIScrollViewDelegate>
 @property (nonatomic,retain) UIWebView *webView;
 @property (nonatomic,assign) BOOL formatHTML;
@@ -89,7 +91,7 @@ static Class hackishFixClass = Nil;
     _isContentLoaded = NO;
     _hasAppearedForFirstTime = YES;
     // Do any additional setup after loading the view.
-    
+        
     _webView = [[UIWebView alloc] initWithFrame:self.view.frame];
     _webView.keyboardDisplayRequiresUserAction = NO;
     _webView.scalesPageToFit = YES;
@@ -102,9 +104,17 @@ static Class hackishFixClass = Nil;
     [_webView.scrollView setShowsHorizontalScrollIndicator:NO];
     [self.view addSubview:_webView];
     
+    
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"html"];
     NSData *htmlData = [NSData dataWithContentsOfFile:filePath];
     NSString *htmlString = [[NSString alloc] initWithData:htmlData encoding:NSUTF8StringEncoding];
+    
+    /*This takes full device width*/
+    htmlString = [NSString stringWithFormat:htmlString,@"device-width"];
+    /*For Custom Width
+        htmlString = [NSString stringWithFormat:htmlString,@"600px"];
+    */
+    
     NSString *bundlePath = [NSString stringWithFormat:@"%@/",[[NSBundle mainBundle] bundlePath]];
     [_webView loadHTMLString:htmlString baseURL:[NSURL URLWithString:bundlePath]];
     
@@ -118,7 +128,6 @@ static Class hackishFixClass = Nil;
         self.webView.frame = self.view.frame;
     }
     _hasAppearedForFirstTime = NO;
-   ///NSLog(@"frame: %f,%f",self.view.frame.size.width,self.view.frame.size.height);
 }
 
 -(void)onViewWillTransitToSize:(CGSize)size{
@@ -138,9 +147,9 @@ static Class hackishFixClass = Nil;
 - (NSString *)tidyHTML:(NSString *)html {
     html = [html stringByReplacingOccurrencesOfString:@"<br>" withString:@"<br />"];
     html = [html stringByReplacingOccurrencesOfString:@"<hr>" withString:@"<hr />"];
-    if (self.formatHTML) {
+    //if (self.formatHTML) {
         //html = [self.editorView stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"style_html(\"%@\");", html]];
-    }
+    //}
     return html;
 }//end
 
@@ -173,7 +182,12 @@ static Class hackishFixClass = Nil;
 }
 
 -(void)setLineFormat:(NSString *)format{
-    NSString *lineFormat = [NSString stringWithFormat:@"setLineFormat('%@',true);",format];
+    NSString *lineFormat;
+    if([format isEqualToString:@"none"]){
+        lineFormat = [NSString stringWithFormat:@"setLineFormat('bullet',false);"];
+    }else{
+        lineFormat = [NSString stringWithFormat:@"setLineFormat('%@',true);",format];
+    }
     [_webView stringByEvaluatingJavaScriptFromString:lineFormat];
 }
 

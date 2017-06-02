@@ -17,12 +17,10 @@
 
 
 
-
 @interface QuillToolbar()
 @end
 
 @implementation QuillToolbar
-
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
@@ -112,10 +110,10 @@
 
 -(void)onToolbarButtonClicked:(QuillToolbarButton *)button{
     if(_editorViewController){
+        button.active = !button.active;
         if(button.textAlignment){
             [self.editorViewController setTextAlignment:button.format];
         }else if(button.textFormatting){
-            button.active = !button.active;
             [self.editorViewController setTextFormat:button.format andApply:button.active];
         }else if(button.lineAlignment){
             [self.editorViewController setLineAlignment:button.format];

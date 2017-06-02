@@ -11,6 +11,7 @@ var editor = new Quill('#editor-container', {
                        // }
                        });
 
+
 function getCaretClientPosition() {
     var x = 0, y = 0;
     var sel = window.getSelection();
@@ -23,7 +24,6 @@ function getCaretClientPosition() {
                 y = rects[0].top;
                 
                 if(y < 0) y = rects[0].bottom;
-//                console.log('left: '+rects[0].left+' top: '+rects[0].top + ' right: '+rects[0].right+' bottom: '+rects[0].bottom);
             }else{
                 return null;
             }
@@ -117,7 +117,7 @@ function onTextSelectedInRange(range,attributes){
 
 /*Event Listener*/
 editor.on('selection-change', function(range) {
-//         console.log('selection-change', range);
+         console.log('selection-change', range);
           if(range){
                 contents = editor.getContents(range.start,range.end);
                 ops = contents.ops;
@@ -190,8 +190,6 @@ editor.on('text-change', function(delta, source) {
                 $('html,body').animate({'scrollTop':(cursorY + 2)},animationDuration);
             }
           }
-          
-          return;
           
 });
 
