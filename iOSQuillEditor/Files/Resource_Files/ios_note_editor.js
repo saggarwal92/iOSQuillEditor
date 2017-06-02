@@ -75,8 +75,6 @@ function setTextAlignment(alignment){
         }else{
             editor.formatText(range.start,range.end,'align',alignment);
         }
-    }else{
-//        console.log('cursor is not in editor');
     }
 }
 
@@ -84,8 +82,6 @@ function setLineFormat(format,value){
     range = editor.getSelection();
     if(range){
         editor.formatLine(range.start,range.end,format,value);
-    }else{
-//        console.log('cursor is not in editor')
     }
 }
 
@@ -97,20 +93,15 @@ function setTextFormat(format,value){
         }else{
             editor.formatText(range.start ,range.end ,format ,value);
         }
-    }else{
-//        console.log('cursor is not in editor');
     }
 }
 
 function onTextSelectedInRange(range,attributes){
-//    console.log('common attributes: ',attributes);
     if(attributes){
         callback = "edit://selection/"+range.start+"/"+range.end+"/"+attributes.join(',');
-        //console.log('callback',callback);
         window.location = callback;
     }else{
         callback = "edit://selection/"+range.start+"/"+range.end+"/";
-        //console.log('callback',callback);
         window.location = callback;
     }
 }
